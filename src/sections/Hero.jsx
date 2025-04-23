@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import Button from '../components/Button'
-import { ShoeCard } from '../components/ShoeCard'
+import ShoeCard from '../components/ShoeCard'
 import {arrowRight} from '../assets/icons'
 import { statistics, shoes } from '../constants'
 
@@ -9,8 +9,8 @@ const Hero = () => {
     
     return (
         <section className='flex flex-col-2'>
-                <div className="relative flex flex-col justify-center items-start w-[90%] 
-                    md:w-[80%] lg:w-[60%] xl:w-[50%] px-[5%] pt-5">
+                <div className="relative flex flex-col justify-center items-start w-[80%] 
+                    md:w-[80%] lg:w-[60%] xl:w-[50%] px-[5%] p-5">
 
                     <p className="text-xl font-montserrat text-coral-red">Our Summer Collection</p>
 
