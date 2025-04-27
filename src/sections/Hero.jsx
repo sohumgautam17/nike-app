@@ -20,12 +20,12 @@ const Hero = () => {
                         <span className="text-coral-red">Nike</span> Shoes
                     </h1>
 
-                    <p className="font-montserrat text-gray-500 text-xl w-[60%]">Discover stylish Nike arrivals, quality, 
+                    <p className="font-montserrat text-gray-500 text-xl w-[60%] mb-6">Discover stylish Nike arrivals, quality, 
                         comfort, and innovation for your active life.</p>
 
                     <Button label="Shop Now" iconURL={arrowRight}/>
 
-                    <div className='flex justify-start items-start flex-wrap gap-16'>  
+                    <div className='flex justify-start items-start flex-wrap gap-16 mt-6'>  
                         {statistics.map((info, index) => {
                             return (
                                 <div key={index} className=''>

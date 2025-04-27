@@ -1,6 +1,6 @@
 import React from 'react'
 
-export const ShoeCard  = ( { imgURL, changeBigShoeImg, bigShoeImg} ) => {
+const ShoeCard  = ( { imgURL, changeBigShoeImg, bigShoeImg} ) => {
     const handleClick = () => {
         if (bigShoeImg !== imgURL.bigShoe) {
             changeBigShoeImg(imgURL.bigShoe);
@@ -28,3 +28,5 @@ export const ShoeCard  = ( { imgURL, changeBigShoeImg, bigShoeImg} ) => {
         </div>
       );
     };
+
+export default ShoeCard;

@@ -1,5 +1,8 @@
 import { facebook, instagram, shieldTick, support, truckFast, twitter } from "../assets/icons";
 import { bigShoe1, bigShoe2, bigShoe3, customer1, customer2, shoe4, shoe5, shoe6, shoe7, thumbnailShoe1, thumbnailShoe2, thumbnailShoe3 } from "../assets/images";
+import truckFastSVG from '../assets/icons/truck-fast.svg';
+import shieldTickSVG from '../assets/icons/shield-tick.svg';
+import supportSVG from '../assets/icons/support.svg';
 
 export const navLinks = [
     { href: "#home", label: "Home" },
@@ -54,17 +57,17 @@ export const products = [
 
 export const services = [
     {
-        imgURL: truckFast,
+        imgURL: truckFastSVG,
         label: "Free shipping",
         subtext: "Enjoy seamless shopping with our complimentary shipping service."
     },
     {
-        imgURL: shieldTick,
+        imgURL: shieldTickSVG,
         label: "Secure Payment",
         subtext: "Experience worry-free transactions with our secure payment options."
     },
     {
-        imgURL: support,
+        imgURL: supportSVG,
         label: "Love to help you",
         subtext: "Our dedicated team is here to assist you every step of the way."
     },
