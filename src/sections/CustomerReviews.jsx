@@ -14,13 +14,14 @@ const CustomerReviews = () => {
                 </p>
             </div>
 
-            <div>
+            <div className='flex flex-col gap-8 md:flex-row mt-16'>
                 {reviews.map((review, index) => (
                     <ReviewCard
+                        key={index}
                         imgURL={review.imgURL}
                         rating={review.rating}
                         feedback={review.feedback}
-                        name={review.name}
+                        name={review.customerName}
                     />
                 ))}
             </div>

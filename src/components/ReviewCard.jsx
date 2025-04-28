@@ -3,26 +3,26 @@ import { star } from '../assets/icons'
 
 const ReviewCard = ( {imgURL, rating, feedback, name} ) => {
     return (
-        <div>
+        <div className='flex flex-col items-center mx-16 gap-4'>
             <img 
                 src={imgURL}
                 alt="Reviewer"
-                className='w-50 h-auto'
+                className='w-[30%] rounded-full'
             />
 
-            <p>
-                {feedback}
+            <p className='text-lg text-center font-montserrat text-gray-500 w-[80%]'>
+                "{feedback}"
             </p>
 
-            <div>
+            <div className='flex gap-2'>
                 <img
                     src={star}
                     alt='star'
                 />
-                <p>{rating}</p>
+                <p className='text-lg font-montserrat text-gray-500'>({rating})</p>
             </div>
 
-            <p>{name}</p>
+            <p className='text-2xl font-bold font-palanquin'>{name}</p>
 
         </div>
     )
